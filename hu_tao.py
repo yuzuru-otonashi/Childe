@@ -26,6 +26,10 @@ async def on_message(message):
     if any(word in message.content for word in Hu_tao):
         await message.channel.send('Wangy wangy~ :heart:')
         await bot.process_commands(message)
+        
+    if any(word in message.content for word in Hu_tao):
+        await message.channel.send('Apa sayang?')
+        await bot.process_commands(message)
 
 # keep_alive()
 bot.run(os.getenv('TOKEN'))
